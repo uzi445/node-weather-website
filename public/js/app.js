@@ -10,16 +10,14 @@ wForm.addEventListener("submit", (e) => {
   messageOne.textContent = "loading...";
   messageTwo.textContent = "";
   const location = search.value;
-  fetch(`http://localhost:3000/weather?address=${location}`).then(
-    (response) => {
-      response.json().then((d) => {
-        if (d.error) {
-          return (messageOne.textContent = d.error);
-        } else {
-          messageOne.textContent = `${d.location}`;
-          messageTwo.textContent = `${d.forecast}`;
-        }
-      });
-    }
-  );
+  fetch(`/weather?address=${location}`).then((response) => {
+    response.json().then((d) => {
+      if (d.error) {
+        return (messageOne.textContent = d.error);
+      } else {
+        messageOne.textContent = `${d.location}`;
+        messageTwo.textContent = `${d.forecast}`;
+      }
+    });
+  });
 });
