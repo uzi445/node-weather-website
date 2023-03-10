@@ -1,5 +1,4 @@
 console.log(`Client side js is loaded`);
-console.log("Client side js loaded");
 
 const wForm = document.querySelector("form");
 const search = document.querySelector("input");
