@@ -55,3 +55,7 @@ button {
   color: aliceblue;
   padding: 8px;
 }
+
+#message2 {
+  width: 50vh;
+}
