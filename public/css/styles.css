@@ -1,8 +1,12 @@
 body {
-  color: #f1f3f5;
-  background-color: #212529;
+  margin: 0;
+  padding: 0;
+  color: #212529;
+  background-color: #dee2e6;
   font-family: "Quicksand", sans-serif;
   font-size: 24px;
+  width: 100v;
+  overflow: hidden;
 }
 .section-1 {
   display: flex;
@@ -12,17 +16,15 @@ body {
 }
 
 a {
-  color: #f1f3f5;
+  color: #c92a2a;
   text-decoration: none;
 }
 .nav-container {
-  background-color: #000000;
-  border: 1px solid red;
-
+  background-color: #f1f3f5;
   padding: 14px;
 }
 .nav-container a {
-  padding: 24px;
+  padding: 12px;
 }
 img {
   display: block;
@@ -32,33 +34,65 @@ img {
   margin-bottom: 24px;
   width: 40%;
   height: auto;
-  border: 1px solid red;
 }
 
 input {
   font-family: "Quicksand", sans-serif;
   font-size: 18px;
-  border: 1px solid red;
-  background-color: black;
+  border: 1px solid #212529;
+  background-color: #f1f3f5;
   padding: 8px;
-  color: aliceblue;
+  color: #212529;
 }
 input::placeholder {
-  color: aliceblue;
+  color: #212529;
 }
 button {
   cursor: pointer;
-  border: 1px solid red;
-  background-color: black;
-  color: aliceblue;
+  border: 1px solid #212529;
+  background-color: #f1f3f5;
+  color: #212529;
   padding: 8px;
   font-family: "Quicksand", sans-serif;
   font-size: 18px;
 }
 
 .footer {
-  position: fixed;
   text-align: center;
+  position: absolute;
+
   bottom: 0px;
   width: 100%;
+}
+
+.icon {
+  width: 10%;
+}
+.help-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for small screens */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 20px;
+  }
+
+  .section-1 {
+    align-items: center;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  .nav-container a {
+    padding: 8px;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+  }
 }
