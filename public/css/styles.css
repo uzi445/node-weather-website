@@ -72,27 +72,3 @@ button {
   display: flex;
   flex-direction: column;
 }
-
-/* Styles for small screens */
-@media screen and (max-width: 600px) {
-  body {
-    font-size: 20px;
-  }
-
-  .section-1 {
-    align-items: center;
-  }
-
-  img {
-    width: 80%;
-  }
-
-  .nav-container a {
-    padding: 8px;
-  }
-
-  .footer {
-    position: absolute;
-    bottom: 0;
-  }
-}
